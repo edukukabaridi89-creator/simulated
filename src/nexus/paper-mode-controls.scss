@@ -1,0 +1,113 @@
+.nx-paper-balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    min-width: 120px;
+    padding: 6px 10px;
+    border: 1px solid #c58b13;
+    border-radius: 8px;
+    background: #fff8e8;
+    color: #372600;
+    line-height: 1.2;
+}
+
+.nx-paper-balance__label {
+    color: #795500;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.nx-paper-balance strong {
+    font-size: 13px;
+}
+
+.nx-paper-modal {
+    position: fixed;
+    z-index: 10000;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgb(0 0 0 / 55%);
+}
+
+.nx-paper-modal__card {
+    width: min(100%, 420px);
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+    color: #111;
+    box-shadow: 0 16px 48px rgb(0 0 0 / 25%);
+}
+
+.nx-paper-modal__card h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.nx-paper-modal__card p {
+    margin: 0 0 18px;
+    color: #555;
+    line-height: 1.45;
+}
+
+.nx-paper-modal__card label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.nx-paper-modal__card input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.nx-paper-modal__error {
+    margin-top: 8px;
+    color: #a40000;
+    font-size: 13px;
+}
+
+.nx-paper-modal__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.nx-paper-modal__actions button {
+    min-height: 40px;
+    padding: 8px 14px;
+    border: 1px solid #777;
+    border-radius: 6px;
+    background: #fff;
+    color: #111;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nx-paper-modal__actions button[type='submit'] {
+    border-color: #805900;
+    background: #805900;
+    color: #fff;
+}
+
+@media (max-width: 640px) {
+    .nx-paper-balance {
+        min-width: 94px;
+        padding: 5px 7px;
+    }
+
+    .nx-paper-balance strong {
+        font-size: 11px;
+    }
+}
